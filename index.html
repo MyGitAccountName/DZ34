@@ -1,2 +1,103 @@
 <!doctype html>
 <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Scrollspy/Carousel</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+              integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+
+    </head>
+
+    <body data-spy="scroll" data-target="#navbar" data-offset="50">
+
+    <header>
+        <h1>Страница ДЗ 34</h1>
+
+        <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">Навигационная панель</a>
+
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class="navbar-nav nav-pills w-100 justify-content-start">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#block1">Раздел 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#block2">Карусель</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#block3">Раздел 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#block4">Раздел 4</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="block1" class="container-fluid">
+        <h1>Раздел 1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, dolore eum excepturi illo iure nostrum numquam perferendis sequi? Adipisci asperiores, assumenda commodi cupiditate dicta et molestias nobis omnis optio, placeat, possimus quam quis rem repellendus sint vel velit. Aliquam consectetur consequuntur, corporis excepturi fugit ipsum non odio qui, quibusdam tempora velit veniam voluptas. Atque aut in maiores, nulla quidem quisquam rerum. Alias aspernatur culpa deleniti dicta, dolor, doloremque doloribus dolorum eaque earum eligendi esse exercitationem expedita incidunt inventore ipsum iusto laborum libero molestiae nam neque nihil optio pariatur placeat quidem quod rerum, vero vitae. Autem enim esse eum facere illo omnis quod veniam. Accusantium amet asperiores, autem consequatur cum delectus enim esse explicabo libero magnam mollitia, neque nesciunt nihil non obcaecati placeat quae quis quo quod rem rerum soluta suscipit, tenetur totam vel veniam voluptatem! Esse exercitationem expedita hic, magnam necessitatibus, nisi nostrum pariatur quas reprehenderit, repudiandae rerum tempora ullam voluptatem? Ad aliquid dicta doloremque eos, error ipsum molestiae nam necessitatibus neque officia officiis quasi, saepe vero. Blanditiis consectetur consequatur possimus quaerat veniam. Ad aliquid animi aperiam beatae commodi cum ea facilis fugit in ipsam ipsum iste iure laudantium molestiae nam, natus non perferendis quia quidem quo quos rerum, ullam. Accusamus aspernatur deserunt, doloremque dolorum error et excepturi facere fugiat id libero, neque nisi nobis possimus rem sed ullam veritatis voluptates! A accusantium adipisci aliquid doloribus modi optio, quisquam quod! Adipisci, aliquid asperiores consectetur doloribus enim illum maxime numquam optio perspiciatis, quibusdam recusandae, voluptas. Assumenda atque corporis cum debitis dolor, id, magnam molestiae molestias perspiciatis praesentium provident quo sequi ullam, veniam voluptatibus! Ab accusantium aliquam atque blanditiis corporis cumque doloremque dolores eaque esse eveniet ex facilis fugit ipsa itaque iure iusto labore minima, minus necessitatibus non obcaecati officia pariatur perspiciatis placeat porro possimus provident quae quia reiciendis repellat saepe sapiente, tenetur voluptatem. Doloremque ex excepturi mollitia. Adipisci aperiam consequatur deserunt dolorem, error fugiat harum inventore laboriosam magni nostrum odio, optio quis quos rerum sint soluta, voluptate voluptatem. Accusantium adipisci aliquid animi aut dicta dignissimos, eaque expedita maxime molestiae neque nisi pariatur quaerat quasi, quisquam tempora. Aliquam amet at cum delectus dicta dolor dolore, dolores enim et eveniet exercitationem facilis in ipsam laborum, minima minus non omnis quibusdam, quis sapiente soluta sunt suscipit totam vitae voluptate voluptates voluptatibus? Aliquam asperiores cumque, dolor ducimus ea expedita maiores officia officiis praesentium rem! Animi aspernatur aut blanditiis, cupiditate deleniti dolorem eaque esse explicabo illum impedit, laboriosam magni provident quidem repellat rerum temporibus vero voluptas, voluptatum?
+        </p>
+    </div>
+    <div id="block2" class="container-fluid">
+        <h1>Раздел 2</h1>
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/1.png" class="d-block w-100" alt="one">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/2.jpg" class="d-block w-100" alt="two">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/3.png" class="d-block w-100" alt="three">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/4.jpg" class="d-block w-100" alt="four">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div id="block3" class="container-fluid">
+        <h1>Раздел 3</h1>
+        <img src="image/water.jpg" class="d-block w-70" alt="water">
+    </div>
+    <div id="block4" class="container-fluid">
+        <h1>Раздел 4</h1>
+        <textarea class="d-block" name="comment" cols="30" rows="5"></textarea>
+        <input type="submit" class="btn btn-block" value="Отправить" name="send" id="send">
+    </div>
+
+
+    <footer>
+        <h2>2021 г.</h2>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+    <!--<script src="js/anchor.js"></script>-->
+
+    </body>
+</html>
